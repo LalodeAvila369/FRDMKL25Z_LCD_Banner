@@ -28,22 +28,24 @@ int main(void) {
     while(1) {
     	Line(1);
         LCD_Mode(1, 1);
-    	        LCD_Write('M');
-    	        LCD_Write('I');
-    	        LCD_Write('C');
-    	        LCD_Write('R');
-    	        LCD_Write('O');
-    	        LCD_Write('S');
-    	        LCD_Write(' ');
-    	        LCD_Write(' ');
-    	        LCD_Write('I');
-    	        LCD_Write('E');
-    	        LCD_Write('I');
-    	        LCD_Write(' ');
-    	        LCD_Write(' ');
-    	        LCD_Write('U');
-    	        LCD_Write('A');
-    	        LCD_Write('Z');
+        LCD_Write('M');
+		LCD_Write('I');
+		LCD_Write('C');
+		LCD_Write('R');
+		LCD_Write('O');
+		LCD_Write('S');
+		LCD_Write(' ');
+		LCD_Write(' ');
+		LCD_Write('I');
+		LCD_Write('E');
+		LCD_Write('I');
+		LCD_Write(' ');
+		LCD_Write(' ');
+		LCD_Write('U');
+		LCD_Write('A');
+		LCD_Write('Z');
+		Line(2);
+		Drucken_LCD("_<ASTROCODE>");
     }
     return 0 ;
 }

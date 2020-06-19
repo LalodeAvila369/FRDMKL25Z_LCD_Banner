@@ -143,6 +143,22 @@ void Line (int i){
 	if (i==2){
 	    LCD_DDRAM(40u);
 	}else if(i==1){
-		LCD_DDRAM(17u);
+		LCD_DDRAM(00u);
+	}
+}
+
+void Drucken_LCD(char Nachricht[]){
+	int i = 0;
+	int Zeichenketten = (strlen(Nachricht)-1);
+	while (i <= Zeichenketten){
+		if(i==16){
+			Line(2);
+			LCD_Write(Nachricht[i]);
+			i++;
+		}else{
+			LCD_Write(Nachricht[i]);
+			i++;
+		}
+
 	}
 }
